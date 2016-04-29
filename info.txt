@@ -8,7 +8,7 @@ Config.xml file:
 <widget id="com.dagrinchi.sexyplan" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Femiapp</name>
     <description>
-        App para la planificación femenina. FEMIAPP; TUS DIAS, TU FUTURO.
+        App para la planificación femenina. - FEMIAPP; TUS DIAS, TU FUTURO.
     </description>
     <author email="wdavid@dagrinchi.com" href="http://cool4code.com/">
         David Alméciga, twitter @dagrinchi
