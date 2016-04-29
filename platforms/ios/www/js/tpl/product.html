@@ -1,0 +1,71 @@
+<header class="bar bar-nav sxy-header" style="height: 75px;">
+  <a class="btn btn-link btn-nav pull-left btn-back">      
+      ATRAS
+  </a>
+</header>
+
+<div id="product" class="content sxy-content" style="padding-top: 75px;">
+  <div id="product-detail">
+    <div class="card sxy-card" style="padding: 15px;">        
+          <h3><%= nombreGenerico %></h3>
+          <p><%= pastillaInyeccion %></p>
+    </div>  
+    <div class="card sxy-card">
+      <ul class="table-view">
+        <li class="table-view-cell"><p><strong>Número:</strong></p> <span class="badge sxy-badge"><%= numero %></span></li>
+        <li class="table-view-cell"><p><strong>Frecuencia:</strong></p><%= frecuencia %></li>
+        <li class="table-view-cell"><p><strong>Característica:</strong></p><%= caracteristica %></li>
+        <li class="table-view-cell"><p><strong>Modo de uso:</strong></p><%= modoUso %></li>
+      </ul>
+    </div>
+  </div>  
+</div> 
+
+<div class="bar bar-standard bar-footer sxy-btn-planificar">
+  <a href="#planModal" class="btn btn-block"><span class="icon sxy-icon-planificacion"></span> Planificar</a>
+</div>     
+
+<div id="planModal" class="modal">
+  <form id="planForm" class="input-group">    
+    <header class="bar bar-nav">
+      <a class="icon icon-close pull-right btn-back"></a>
+      <h1 class="title">Planifica</h1>
+    </header>
+    <div class="content">   
+      <div class="input-row">
+        <label id="text-lbl" for="text">Mensaje de alerta</label>  
+        <input type="text" id="text" name="text" placeholder="Vestir de azul..." />
+      </div>
+      <div class="input-row">
+        <label id="start-date-lbl" for="start-date">¿Que día?</label>  
+        <input type="date" id="start-date"  name="start-date" />        
+      </div>
+      <div class="input-row">
+        <label id="start-time-lbl" for="start-time">¿A que hora?</label>          
+        <input type="time" id="start-time"  name="start-time" />        
+      </div>
+      <div class="input-row">        
+        <label for="reminder-lbl" for="reminder">Recuerdame</label>  
+        <select id="reminder" name="reminder" class="sxy-select">            
+          <option value="minutes-5">5 minutos antes</option>
+          <option value="minutes-30">30 minutos antes</option>
+          <option value="hours-1">Una hora antes</option>
+          <option value="hours-2">Dos horas antes</option>
+          <option value="days-1">Un día antes</option>
+          <option value="weeks-1">Una semana antes</option>
+          <option value="weeks-2">Dos semanas antes</option>
+        </select> 
+      </div>      
+      <input type="hidden" id="numero" name="numero" value="<%= numero %>" />
+      <input type="hidden" id="rec_type" name="rec_type" value="<%= rec_type %>" />
+    </div>
+    <div class="bar bar-standard bar-footer sxy-btn-planificar">
+      <button id="plan" class="btn btn-block"><span class="icon sxy-icon-planificacion"></span> Guardar</button>
+    </div>      
+  </form>
+</div>
+
+<div class="sxy-border-top"></div>
+<div class="sxy-border-bottom"></div>
+<div class="sxy-border-left"></div>
+<div class="sxy-border-right"></div>

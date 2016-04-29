@@ -1,0 +1,31 @@
+Node version: v0.12.4
+
+Cordova version: 4.3.0
+
+Config.xml file: 
+
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.dagrinchi.sexyplan" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Femiapp</name>
+    <description>
+        App para la planificación femenina. FEMIAPP; TUS DIAS, TU FUTURO.
+    </description>
+    <author email="wdavid@dagrinchi.com" href="http://cool4code.com/">
+        David Alméciga, twitter @dagrinchi
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
+
+
+Plugins: 
+
+com.cmackay.plugins.googleanalytics,de.appplant.cordova.plugin.local-notification,org.apache.cordova.console,org.apache.cordova.device,org.apache.cordova.dialogs,org.apache.cordova.network-information,org.apache.cordova.vibration
+
+Error retrieving Android platform information: Error: android: Command failed with exit code ENOENT
+
+iOS platform:
+
+Xcode 6.4
+Build version 6E35b
+

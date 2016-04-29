@@ -1,0 +1,30 @@
+<header class="bar bar-nav sxy-header" style="height: 75px;">
+  <a class="btn btn-link btn-nav pull-left btn-back">      
+      INICIO
+  </a>
+  <p style="position: absolute; bottom: 15px; width: 65%; right: 0;">Esta herramienta sólo puede ser utilizada bajo prescripción médica.</p>
+</header>
+<div id="products" class="content sxy-content" style="padding-top: 75px;">
+  <ul id="products-list" class="table-view sxy-table-view">
+    <li class="table-view-cell media" style="background: rgba(255, 255, 255, 0.5); border: none;">            
+      <div class="media-body">
+        INYECTABLES
+        <p></p>
+      </div>
+    </li>    
+    <% _.each(data, function(d){ %>    
+    <li class="table-view-cell media">
+      <a class="navigate-right" href="#product/inyectables/<%= d.id %>">
+        <div class="media-body" style="text-align: left;">
+          <%= d.nombreGenerico %>
+          <p><%= d.frecuencia %></p>
+        </div>
+      </a>
+    </li>    
+    <% }); %>
+  </ul>  
+</div>
+<div class="sxy-border-top"></div>
+<div class="sxy-border-bottom"></div>
+<div class="sxy-border-left"></div>
+<div class="sxy-border-right"></div>
